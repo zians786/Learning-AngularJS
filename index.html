@@ -1,0 +1,15 @@
+<html ng-app>
+<head>
+<script src="angular.js"></script>
+</head>
+
+<body ng-init="val=14">
+  <h1> AngularJs!</h1>
+  <p ng-if="val<12"> Good Morning</p>
+  <p ng-if="val<17 && val>12"> Good Afternoon</p>
+  <p ng-if="val>17"> Good evening</p>
+
+ <p>Current time using ng-bind : <span ng-bind="val"></span></p>
+ <p>Current time using expression : {{val}}</p>
+  </body
+</html

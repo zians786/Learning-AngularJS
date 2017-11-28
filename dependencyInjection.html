@@ -1,0 +1,29 @@
+<html ng-app="myApp">
+<head>
+<script src="angular.js"></script>
+</head>
+
+<body>
+
+<div ng-controller="mainFrame">
+  <p ng-if="val<12"> Good Morning</p>
+  <p ng-if="val<17 && val>12"> Good Afternoon</p>
+  <p ng-if="val>17"> Good evening</p>
+</div>
+
+</body>
+
+
+<script>
+
+var module=angular.module("myApp",[]);
+module.controller("mainFrame",Main);
+
+function Main($scope) {
+  $scope.val=14;
+  console.log("main called");
+}
+</script>
+
+
+</html>

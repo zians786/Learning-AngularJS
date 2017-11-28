@@ -1,0 +1,26 @@
+<html ng-app="myApp">
+<head>
+<script src="angular.js"></script>
+</head>
+
+<body>
+
+<div ng-controller="mainFrame">
+  <p>hello</p>
+</div>
+
+</body>
+
+
+<script>
+
+var module=angular.module("myApp",[]);
+module.controller("mainFrame",Main);
+
+function Main() {
+  console.log("main called");
+}
+</script>
+
+
+</html>

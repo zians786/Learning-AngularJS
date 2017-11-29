@@ -1,0 +1,26 @@
+<html ng-app="App">
+<head>
+<script src="angular.js"></script>
+<script src="app.js"></script>
+</head>
+
+<body>
+<div ng-controller="control as c">
+  <div ng-repeat="i in c.myList">
+    <p>hello</p>
+    <p>{{i}}</p>
+  <hr/>
+
+  </div>
+  <div ng-repeat="obj in c.objectList"> //these are not same variables, angular create copies of varible having multiple scope object
+    element: {{$index+1}},
+    name: {{obj.name}},
+    age: {{obj.age}}
+  <hr/>
+
+  </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+<html ng-app="App">
+<head>
+      <link rel="stylesheet" href="http://mbenford.github.io/ngTagsInput/css/ng-tags-input.min.css" />
+<script src="angular.js"></script>
+<script src="app.js"></script>
+<script src="mymodule.js"></script>
+<script src="http://mbenford.github.io/ngTagsInput/js/ng-tags-input.min.js"></script>
+</head>
+
+<body>
+<div ng-controller="myController as c">
+  <p ng-bind="c.data"></p>
+</div>
+<div ng-controller="MainCtrl">
+   <tags-input ng-model="tags"></tags-input>
+   <p>Model: {{tags}}</p>
+ </div>
+
+  </body>
+  </html>

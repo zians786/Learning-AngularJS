@@ -1,0 +1,17 @@
+{
+  "name": "Test",
+  "homepage": "https://github.com/zians786/Learning-AngularJS",
+  "authors": [
+    "zians786 <zian.ansari19@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
